@@ -30,7 +30,7 @@ app.use(express.json());
 
 // Set up CORS policy
 app.use(cors({
-  origin: process.env.CLIENT_URL || 'http://localhost:5173', // Allow requests from this origin
+  origin: process.env.CLIENT_URL || 'https://datingproject-f.vercel.app', // Allow requests from this origin
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
   credentials: true // Allow cookies and credentials
 }));
@@ -64,5 +64,5 @@ server.listen(PORT, () => {
 });
 
 // Example URL for profile pictures
-const profilePicUrl = 'http://localhost:7000/uploads/profile-pics/<filename>';
+const profilePicUrl = 'https://datingprojectb.onrender.com/uploads/profile-pics/<filename>';
 console.log(`Profile pictures can be accessed at: ${profilePicUrl}`);
